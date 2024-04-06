@@ -6,7 +6,6 @@ function App() {
   const example = (user: string) =>{}
   return (
     <div className="App">
-      <h1>Hey!</h1>
       <LoginForm onSubmit={example} />
     </div>
   );
