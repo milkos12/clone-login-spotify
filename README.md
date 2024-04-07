@@ -1,7 +1,8 @@
 # Clon del Login de Spotify con Django y React
 
 ![image](https://github.com/milkos12/clone-login-spotify/assets/78831533/554c854b-8d73-4e35-92e3-f4d0f5ed74a4)
-Esta imagen corresponde al clon
+
+**Esta imagen corresponde al CLON**
 
 Este proyecto es un clon del login de Spotify desarrollado utilizando Django para el backend y React para el frontend. El objetivo principal es replicar la funcionalidad de login de Spotify, permitiendo a los usuarios autenticarse y acceder a su cuenta.
 
