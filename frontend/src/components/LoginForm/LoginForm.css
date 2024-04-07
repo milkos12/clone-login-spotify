@@ -44,6 +44,7 @@
     min-width: 300px;
     padding: 14px;
     font-size: 17px;
+    color: #fff;
 }
 
 .form-login-password-input {
@@ -58,6 +59,11 @@
     top: 10px;
     fill: #727272;
 }
+
+.form-login-aye-password-checkbox {
+    display: none;
+}
+
 
 .form-login-switch-remenber {
     position: relative;

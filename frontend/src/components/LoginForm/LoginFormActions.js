@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 
+import { openAye, closeAye } from './pathsAyesPassword';
 
-export const useActivateCheckbox = () => {
+export const useActivateCheckboxRemenber = () => {
     useEffect(() => {
 
         const switchButtonConteiner = document.querySelector('.form-login-switch-remenber');
@@ -27,3 +28,27 @@ export const useActivateCheckbox = () => {
         switchButtonConteiner.addEventListener('click', activateSwitchButton);
     }, []);
 };
+
+
+export const useActivateCheckboxPassword = () => {
+    useEffect(() => {
+        const checkboxPassword = document.querySelector('.form-login-aye-password-checkbox');
+        const inputPassword = document.querySelector('.form-login-input-password');
+        const ayePassword = document.querySelector('.form-login-aye-password');
+        const pathAyePassword = document.querySelector('.form-login-aye-path-password');
+
+        function showPassword() {
+            if(checkboxPassword.checked) {
+                pathAyePassword.setAttribute('d', openAye);
+                checkboxPassword.checked = false;
+                inputPassword.type = 'password';
+            } else {
+                pathAyePassword.setAttribute('d', closeAye);
+                checkboxPassword.checked = true;
+                inputPassword.type = 'text';
+            }
+        }
+
+        ayePassword.addEventListener('click', showPassword);
+    }, []);
+}
