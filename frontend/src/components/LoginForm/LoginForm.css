@@ -2,9 +2,18 @@
     display: grid;
     background-color: #000000f2;
     color: #fff;
-    min-height: 400px;
-    max-width: 60%;
+    min-height: 600px;
+    width: 150%;
+    padding: 50px 0;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-left: -50px;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    align-self: center;
+    
+    
 }
 
 .form-login-title {
@@ -14,6 +23,8 @@
 
 .form-login-inputs {
     display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-login-title-input {
@@ -43,7 +54,7 @@
 
 .form-login-aye-password {
     position: absolute;
-    right: 70px;
+    right: 20px;
     top: 10px;
     fill: #727272;
 }
@@ -138,14 +149,32 @@
     font-size: 17px;
     font-weight: 300;
     margin-top: 30px;
-    margin-left: 60px;
+   text-align: center;
 }
 
 .form-login-line {
     border: none;
-    border-top: 1px solid #1ED760;
-    width: 300px;
+    border-top: 1px solid #292929;
+    position: absolute;
+    width: 450px;
     text-align: left;
+    bottom: 120px;
+    justify-self: center;
+}
+
+.form-login-singup {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.form-login-singup-text {
+    color: #A7A7A7;
+    font-weight: 400;
+}
+
+.form-login-singup-url {
+    margin-left: 8px;
+    color: #fff;
 }
 
 
