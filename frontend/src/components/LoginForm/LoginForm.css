@@ -183,4 +183,29 @@
     color: #fff;
 }
 
+.form-login-message-error-inputs-desactive {
+    display: none;
+}
+
+.form-login-message-error-inputs-active {
+    display: grid;
+    grid-template-columns: 24px auto;
+    column-gap: 12px;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #de1327;
+}
+
+.form-login-message-error-inputs-active svg {
+    fill: #fff;
+    height: 24px;
+}
+
+.form-login-message-error-inputs-active span {
+    color: #fff;
+    font-weight: 350;
+    font-size: 15px;
+    
+}
+
 
