@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: spotify_db
+      POSTGRES_USER: mains_user
+      POSTGRES_PASSWORD: laudable_password&%$323
+    ports:
+      - "5432:5432"
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: sh -c "python manage.py migrate && python manage.py run server 0.0.0.0:8000"
+    volumes:
+      - ./backend:/app
+    ports:
+     - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DB_NAME=spotify_db
+      - DB_USER=mains_user
+      - DB_PASSWORD=laudable_password&%$323
+      - DB_PASSWORD=laudable_password&%$323
+      - DB_HOST=db
+      - DB_PORT=5432
+    
+
+volumes:
+  postgres_data:
