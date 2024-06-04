@@ -1,0 +1,51 @@
+.form-login-with-buttons {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 100px;
+    
+}
+
+.form-login-with {
+    position: relative;
+}
+
+.form-login-with input {
+    display: block;
+    width: 324px;
+    height: 48px;
+    position: absolute;
+    background: none;
+    border: 1px solid #727272;
+    border-radius: 50px;
+    z-index: 2;
+
+}
+
+.form-login-with input:hover {
+    cursor: pointer;
+    border: 1px solid #FFF;
+}
+
+.form-login-with svg {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+
+}
+
+.form-login-with span {
+    position: absolute;
+    left: 90px;
+    top: 14px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+
+.form-login-with-more-buttoms {
+    margin-top: 58px;
+}
+
+.form-login-with-phone-number span{
+    left: 50px;
+}
