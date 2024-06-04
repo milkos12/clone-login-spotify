@@ -1,19 +1,22 @@
-
+.App{
+    display: grid;
+    grid-template-columns: auto;
+}
 
 .form-login {
     display: grid;
-    background-color: #000000f2;
+    background-color:#000000;
     color: #fff;
     min-height: 600px;
-    width: 150%;
+    width: 40%;
     padding: 50px 0;
     border-radius: 8px;
     margin-top: 50px;
-    margin-left: -50px;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     position: relative;
-    align-self: center;
+    
     
     
 }
@@ -34,6 +37,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .form-login-title-input {
@@ -54,6 +58,11 @@
     padding: 14px;
     font-size: 17px;
     color: #fff;
+}
+
+.form-login-input:hover {
+    border: 1px solid #FFF;
+    
 }
 
 .form-login-password-input {
@@ -92,6 +101,10 @@
     background-color: #1ED760;
     outline: 4px solid #ffff;
     animation: background-color outline .3 ease;
+}
+
+.form-login-switch-remenber:hover, .form-login-switch-remenber-activate:hover {
+    cursor: pointer;
 }
 
 @keyframes changeButtonActive {
@@ -159,13 +172,11 @@
     font-size: 17px;
 }
 
-.form-login-forgot-password {
-    color: #fff;
-    font-size: 17px;
-    font-weight: 300;
-    margin-top: 30px;
-   text-align: center;
+.form-login-button-submit:hover{
+    cursor: pointer;
 }
+
+
 
 .form-login-line {
     border: none;
@@ -175,6 +186,7 @@
     text-align: left;
     bottom: 120px;
     justify-self: center;
+    z-index: 1;
 }
 
 .form-login-singup {
@@ -190,6 +202,10 @@
 .form-login-singup-url {
     margin-left: 8px;
     color: #fff;
+}
+
+.form-login-singup-url:hover {
+    cursor: pointer;
 }
 
 .form-login-message-error-inputs-desactive {
@@ -263,47 +279,10 @@
 
 
 
-.form-login-with-buttons {
-    display: grid;
-    grid-template-rows: auto auto;
-    margin-bottom: 80px;
-    
-}
 
 
-.form-login-with {
-    position: relative;
-}
 
-.form-login-with input {
-    display: block;
-    width: 324px;
-    height: 48px;
-    position: absolute;
-    background: none;
-    border: 1px solid #727272;
-    border-radius: 50px;
-}
-
-.form-login-with svg {
-    position: absolute;
-    left: 30px;
-    top: 12px;
-
-}
-
-.form-login-with span {
-    position: absolute;
-    left: 90px;
-    top: 14px;
-    font-weight: 600;
-}
-
-
-.form-login-with-more-buttoms {
-    margin-top: 58px;
-}
-
-.form-login-with-phone-number span{
-    left: 50px;
+.form-login-line-tow {
+    top: 425px;
+    z-index: 1;
 }
