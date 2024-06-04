@@ -1,3 +1,5 @@
+
+
 .form-login {
     display: grid;
     background-color: #000000f2;
@@ -16,9 +18,16 @@
     
 }
 
+.form-login-logo-main {
+    fill: #FFF;
+    height: 36px;
+    justify-self: center;
+}
+
 .form-login-title {
-    font-size: 50px;
+    font-size: 35px;
 	font-weight: 1100;
+    text-align: center;
 } 
 
 .form-login-inputs {
@@ -209,3 +218,92 @@
 }
 
 
+
+
+
+
+
+
+
+
+.form-login-message-error-inputs-fill-desactive {
+    display: grid;
+    grid-template-columns: 16px auto;
+    column-gap: 2px;
+
+    align-content: center;
+    margin: 10px 0;
+}
+
+.form-login-message-error-inputs-fill-desactive svg {
+    fill: #F15E6C;
+    height: 15px;
+}
+
+.form-login-message-error-inputs-fill-desactive span {
+    color: #F15E6C;
+    font-size: 14px;
+    font-weight: 400;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.form-login-input-password {
+    border-color: #de1327;
+}
+
+.form-login-input {
+    border-color: #de1327;
+}
+
+
+
+
+
+
+
+.form-login-with-buttons {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 80px;
+    
+}
+
+
+.form-login-with {
+    position: relative;
+}
+
+.form-login-with input {
+    display: block;
+    width: 324px;
+    height: 48px;
+    position: absolute;
+    background: none;
+    border: 1px solid #727272;
+    border-radius: 50px;
+}
+
+.form-login-with svg {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+
+}
+
+.form-login-with span {
+    position: absolute;
+    left: 90px;
+    top: 14px;
+    font-weight: 600;
+}
+
+
+.form-login-with-more-buttoms {
+    margin-top: 58px;
+}
+
+.form-login-with-phone-number span{
+    left: 50px;
+}
