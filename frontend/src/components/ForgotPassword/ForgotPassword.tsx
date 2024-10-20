@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './ForgotPassword.css'
 
 function ForgotPassword() {
     return(
-        <a className='form-login-forgot-password' href='#'>Forgot your password?</a>
+        <Link to='/PageForgotPassword' className='form-login-forgot-password'>Forgot your password?</Link>
     );
 }
 

@@ -1,0 +1,101 @@
+.form-reset-password {
+    display: grid;
+    grid-template-columns: 320px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.form-reset-password-svg {
+    text-align: center;
+}
+
+.login-button-submit-forgot input{
+    font-size: 14px;
+    height: 45px;
+    font-weight: 900;
+}
+
+.login-button-submit-forgot input:hover {
+    width: 320px;
+    height: 45px;
+    font-size: 14px;
+}
+
+.login-button-submit-forgot input{ 
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes spin {
+    0% {
+        animation-timing-function: cubic-bezier(1, 0, .6, 1);
+        opacity: 0.5;
+    }
+
+    40% {
+        animation-timing-function: cubic-bezier(0.3, 0, 0, 1);
+        opacity: 0.75;
+        transform: translateZ(100px);
+    }
+
+    65% {
+        animation-timing-function: linear;
+        opacity: 0.5;
+        transform: translateZ(100px);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: translateZ(0);
+    }
+}
+
+
+.login-button-submit-forgot-spiner {
+    position: absolute;
+    margin-left: 125px;
+    perspective: 800px;
+    display: none;
+}
+
+.login-button-submit-forgot-spiner div{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 17.5px;
+    column-gap: 50px;
+    height: 9px;
+    width: 9px;
+    background-color: #000000;
+    border-radius: 10px;
+    animation: spin 1s ease infinite;
+}
+
+.login-button-submit-forgot-spiner-dot:nth-child(1) {
+    animation-delay: 0.01s;
+}
+
+.login-button-submit-forgot-spiner-dot:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.login-button-submit-forgot-spiner-dot:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.login-button-submit-forgot-svg-comeback{
+    fill: #ffffff;
+    width: 27px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.login-button-submit-forgot-svg-comeback-contienier {
+    margin-top: 10px;
+    display: none;
+}
+
+.login-button-submit-forgot-button-comeback {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+}
