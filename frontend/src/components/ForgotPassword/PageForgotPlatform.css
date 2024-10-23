@@ -55,7 +55,6 @@
     position: absolute;
     margin-left: 125px;
     perspective: 800px;
-    display: none;
 }
 
 .login-button-submit-forgot-spiner div{
@@ -91,7 +90,6 @@
 
 .login-button-submit-forgot-svg-comeback-contienier {
     margin-top: 10px;
-    display: none;
 }
 
 .login-button-submit-forgot-button-comeback {

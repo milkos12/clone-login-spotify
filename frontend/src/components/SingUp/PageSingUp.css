@@ -1,0 +1,16 @@
+.form-singup {
+    display: grid;
+    grid-template-columns: 320px;
+    justify-content: center;
+    padding-top: 50px;
+    color: '#ffffff';
+}
+
+.form-singup-svg {
+    text-align: center;
+}
+
+.form-singup-h1 {
+    text-align: center;
+    font-size: 45px;
+}
