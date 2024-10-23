@@ -2,7 +2,11 @@ import React from "react";
 import "./OtherFormatLogin.css"
 
 
-function OtherFormatLogin() {
+export interface otherFormatLogin {
+    showPhone: boolean
+}
+
+function OtherFormatLogin({showPhone}:otherFormatLogin) {
     return (
         <div className='form-login-with-buttons'>
             <div className='form-login-with'>
@@ -42,13 +46,13 @@ function OtherFormatLogin() {
                 <span>Continue with Apple</span>
             </div>
 
+            {showPhone && (
+                <div className='form-login-with form-login-with-more-buttoms form-login-with-phone-number'>
+                    <input type="button" value="" />
+                    <span>Continue with phone number</span>
+                </div>
+            )}
 
-            <div className='form-login-with form-login-with-more-buttoms form-login-with-phone-number'>
-
-
-                <input type="button" value="" />
-                <span>Continue with phone number</span>
-            </div>
 
 
         </div>

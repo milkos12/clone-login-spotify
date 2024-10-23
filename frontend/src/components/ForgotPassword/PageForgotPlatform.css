@@ -97,3 +97,19 @@
     font-weight: 700;
     font-size: 14px;
 }
+
+.form-singup-progres-main {
+    margin-top: 10px;
+    background-color: #7C7C7C;
+    display: block;
+}
+
+.form-singup-progres-progres {
+    background-color: #1ED760;
+    display: block;
+    height: 2px;
+}
+
+.form-singup-svg svg{
+    width: 25px;
+}

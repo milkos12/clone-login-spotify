@@ -14,3 +14,51 @@
     text-align: center;
     font-size: 45px;
 }
+
+.form-conteiner-url {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #1ed760;
+}
+
+.form-conteiner-hr-conteiner {
+    position: relative;
+    width: auto;
+    margin: 25px 0;
+}
+
+.form-conteiner-hr {
+    display: block;
+    border-bottom: 1px solid #727272;
+    margin: 40px 0;
+}
+
+.form-conteiner-hr-text {
+    position: absolute;
+    left: 44%;
+    top: -12px;
+    text-align: center;
+    background-color: #121212;
+    width: 40px;
+    z-index: 1;
+    font-size: 13px;
+}
+
+.form-conteiner-others {
+    margin-top: -20px;
+    border-bottom: 1px solid #292929;
+}
+
+.form-conteiner-text {
+    color: #b3b3b3;
+}
+
+.form-conteiner-link {
+    text-decoration: underline;
+}
+
+.form-conteiner-botton {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
