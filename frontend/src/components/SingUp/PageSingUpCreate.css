@@ -1,0 +1,47 @@
+.form-singup-progres-main-arrow {
+    width: 25px;
+    fill: #b3b3b3;
+    margin: auto;
+}
+
+.form-singup-progres-main-titles {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 40px 300px;
+    column-gap: 5px;
+}
+
+.form-singup-progres-main-titles-steps {
+    display: grid;
+    row-gap: 2.5px;
+}
+
+.form-singup-progres-main-titles-steps-description{
+    font-weight: 600;
+} 
+
+.form-singup-progres-main-titles-steps-count {
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.form-login-password-input {
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.form-singup-progres-check {
+    fill: #1ed760;
+}
+
+.form-singup-progres-checks {
+    display: grid;
+    grid-template-columns: 14px auto;
+    column-gap: 6px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.form-singup-progres-checks svg {
+    margin: auto;
+}

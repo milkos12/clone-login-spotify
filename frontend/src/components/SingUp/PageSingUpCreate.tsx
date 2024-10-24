@@ -1,5 +1,6 @@
 import './PageSingUp.css';
 import '../LoginForm/LoginForm.css';
+import './PageSingUpCreate.css'
 import OtherFormatLogin from '../OtherFormatLogin/OtherFormatLogin';
 
 export function PageSingUpCreate() {
@@ -15,19 +16,19 @@ export function PageSingUpCreate() {
                         </div>
                     </div>
 
-                    <div>
-                        <div>
+                    <div className='form-singup-progres-main-titles'>
+                        <div className='form-singup-progres-main-arrow'>
                             <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" ><path d="M15.957 2.793a1 1 0 0 1 0 1.414L8.164 12l7.793 7.793a1 1 0 1 1-1.414 1.414L5.336 12l9.207-9.207a1 1 0 0 1 1.414 0z"></path></svg>
                         </div>
-                        <div>
-                            <span>Step 1 of 3</span>
-                            <span>Create a password</span>
+                        <div className='form-singup-progres-main-titles-steps'>
+                            <span className='form-singup-progres-main-titles-steps-count'>Step 1 of 3</span>
+                            <span className='form-singup-progres-main-titles-steps-description'>Create a password</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div style={{width: '320px'}}>
+            <div style={{width: '320px', padding: '0 47.5px', marginTop: '35px'}}>
                 <div>
                     <span className='form-login-title-input'>Password</span>
                     <div className='form-login-password-input'>
@@ -38,17 +39,17 @@ export function PageSingUpCreate() {
                 </div>
                 <div>
                     <span className='form-login-title-input'>Your password must contain at least</span>
-                    <div>
+                    <div className='form-singup-progres-checks'>
                         <svg aria-hidden="true" width="12" height="12" data-testid="password_requirement_ten_characters-false"><ellipse cx="6" cy="6" rx="5.5" ry="5.5" stroke="#A7A7A7" stroke-width="1" fill="none"></ellipse></svg>
                         <span>1 letter</span>
                     </div>
-                    <div>
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" data-testid="password_requirement_one_letter-true" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"></path></svg>
-                        <span>1 number or special character (example: # ? ! &)</span>
+                    <div className='form-singup-progres-checks'>
+                        <svg width="12" data-encore-id="icon" role="img" aria-hidden="true" data-testid="password_requirement_one_letter-true" viewBox="0 0 16 16"><path className='form-singup-progres-check' d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"></path></svg>
+                        <span>1 number or special character(example:#?!&)</span>
                     </div>
-                    <div>
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" data-testid="password_requirement_one_letter-true" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"></path></svg>
-                        <span>1 number or special character (example: # ? ! &)</span>
+                    <div className='form-singup-progres-checks'>
+                        <svg width="12" data-encore-id="icon" role="img" aria-hidden="true" data-testid="password_requirement_one_letter-true" viewBox="0 0 16 16"><path className='form-singup-progres-check' d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"></path></svg>
+                        <span>10 characters</span>
                     </div>
                 </div>
                 <div className='form-conteiner-login-button-submit login-button-submit-forgot form-conteiner-button'>
