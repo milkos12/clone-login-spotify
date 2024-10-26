@@ -2,6 +2,27 @@
     width: 25px;
     fill: #b3b3b3;
     margin: auto;
+    height: 100%;
+}
+
+.form-singup-progres-main-arrow svg {
+    display: grid;
+    margin-top: 50%;
+}
+
+.form-singup-create {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+body {
+    background-color: #121212;
+}
+
+.form-singup-svg svg{
+    width: 40px;
+    fill: #ffff;
+    margin-bottom: 10px;
 }
 
 .form-singup-progres-main-titles {
@@ -38,10 +59,19 @@
     display: grid;
     grid-template-columns: 14px auto;
     column-gap: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 13px;
 }
 
-.form-singup-progres-checks svg {
-    margin: auto;
+.form-singup-progres-checks:first-of-type {
+    margin-top: 10px;
+}
+
+
+.contein-password {
+    margin-bottom: 200px;
+}
+
+.form-conteiner-button {
+    margin-top: 30px;
 }
