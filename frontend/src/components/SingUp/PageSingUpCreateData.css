@@ -25,4 +25,31 @@
 .form-login-password-inputs-data-select {
     height: 47px;
     padding: 0 17px;
+    appearance: none;
+    width: 150px;
+    background-color: #121212;
+}
+
+.form-login-password-inputs-data-select-conteiner svg{
+    width: 23px;
+    position: absolute;
+    left: 190px;
+    top: 12px;
+    fill: #818181;
+    pointer-events: none;
+}
+
+
+.form-singup-progres-checks-data {
+    margin: 5px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    font-size: 13px;
+}
+
+.form-singup-progres-checks-data svg {
+    margin: auto;
+    
+    
 }

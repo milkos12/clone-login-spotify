@@ -40,41 +40,54 @@ export function PageSingUpCreate() {
                     <span className='form-login-title-input-description'><br />Why do we need your date of birth? Learn more.</span>
                     <div className='form-login-password-input form-login-password-input-data'>
                         <input className='form-login-password-inputs-data' placeholder='dd'></input>
-                        <select className='form-login-password-inputs-data form-login-password-inputs-data-select'>
-                            <option value="">Month</option>
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                        </select>
+                        <div className='form-login-password-inputs-data-select-conteiner'>
+                            <select className='form-login-password-inputs-data form-login-password-inputs-data-select'>
+                                <option value="">Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"><path d="M2.793 8.043a1 1 0 0 1 1.414 0L12 15.836l7.793-7.793a1 1 0 1 1 1.414 1.414L12 18.664 2.793 9.457a1 1 0 0 1 0-1.414z"></path></svg>
+                        </div>
                         <input className='form-login-password-inputs-data' placeholder='yyyy'></input>
                     </div>
                 </div>
                 <div>
                     <div>
-                    <span className='form-login-title-input'>Gender</span>
-                    <span className='form-login-title-input-description'><br />We use your gender to help personalize our content recommendations and ads for you.</span>
+                        <span className='form-login-title-input'>Gender</span>
+                        <span className='form-login-title-input-description'><br />We use your gender to help personalize our content recommendations and ads for you.</span>
                     </div>
-                    <span className='form-login-title-input contein-password'>Your password must contain at least</span>
-                    <div className='form-singup-progres-checks'>
-                        <svg aria-hidden="true" width="12" height="12" data-testid="password_requirement_ten_characters-false"><ellipse cx="6" cy="6" rx="5.5" ry="5.5" stroke="#A7A7A7" stroke-width="1" fill="none"></ellipse></svg>
-                        <span>1 letter</span>
-                    </div>
-                    <div className='form-singup-progres-checks'>
-                        <svg width="12" data-encore-id="icon" role="img" aria-hidden="true" data-testid="password_requirement_one_letter-true" viewBox="0 0 16 16"><path className='form-singup-progres-check' d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"></path></svg>
-                        <span>1 number or special character(example:#?!&)</span>
-                    </div>
-                    <div className='form-singup-progres-checks'>
-                        <svg width="12" data-encore-id="icon" role="img" aria-hidden="true" data-testid="password_requirement_one_letter-true" viewBox="0 0 16 16"><path className='form-singup-progres-check' d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm11.748-1.97a.75.75 0 0 0-1.06-1.06l-4.47 4.47-1.405-1.406a.75.75 0 1 0-1.061 1.06l2.466 2.467 5.53-5.53z"></path></svg>
-                        <span>10 characters</span>
+                    
+                    <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '10px' }}>
+                        <div className=' form-singup-progres-checks-data'>
+                            <svg aria-hidden="true" width="16" height="16" data-testid="password_requirement_ten_characters-false"><ellipse cx="8" cy="8" rx="6" ry="6" stroke="#1ed760" stroke-width="4" fill="none"></ellipse></svg>
+                            <span>Man</span>
+                        </div>
+                        <div className=' form-singup-progres-checks-data'>
+                            <svg aria-hidden="true" width="16" height="16" data-testid="password_requirement_ten_characters-false"><ellipse cx="8" cy="8" rx="7" ry="7" stroke="#A7A7A7" stroke-width="1" fill="none"></ellipse></svg>
+                            <span>Woman</span>
+                        </div>
+                        <div className=' form-singup-progres-checks-data'>
+                            <svg aria-hidden="true" width="16" height="16" data-testid="password_requirement_ten_characters-false"><ellipse cx="8" cy="8" rx="7" ry="7" stroke="#A7A7A7" stroke-width="1" fill="none"></ellipse></svg>
+                            <span>Non-binary</span>
+                        </div>
+                        <div className='form-singup-progres-checks-data'>
+                            <svg aria-hidden="true" width="16" height="16" data-testid="password_requirement_ten_characters-false"><ellipse cx="8" cy="8" rx="7" ry="7" stroke="#A7A7A7" stroke-width="1" fill="none"></ellipse></svg>
+                            <span>Something else</span>
+                        </div>
+                        <div className='form-singup-progres-checks-data'>
+                            <svg aria-hidden="true" width="16" height="16" data-testid="password_requirement_ten_characters-false"><ellipse cx="8" cy="8" rx="7" ry="7" stroke="#A7A7A7" stroke-width="1" fill="none"></ellipse></svg>
+                            <span>Prefer not to say</span>
+                        </div>
                     </div>
                 </div>
                 <div className='form-conteiner-login-button-submit login-button-submit-forgot form-conteiner-button'>
