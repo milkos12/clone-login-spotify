@@ -1,0 +1,28 @@
+.form-login-title-input-description {
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+.form-login-password-input-data {
+    display: grid;
+    grid-template-columns: 70px 150px 80px;
+    column-gap: 10px;
+}
+
+.form-login-password-inputs-data {
+    border-color:#727272;
+    border-style: solid;
+    border-width: .1px;
+    border-radius: 3px;
+    background-color: transparent;
+    height: 17px;
+    width: auto;
+    padding: 14px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.form-login-password-inputs-data-select {
+    height: 47px;
+    padding: 0 17px;
+}
