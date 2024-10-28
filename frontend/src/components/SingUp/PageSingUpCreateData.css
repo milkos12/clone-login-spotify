@@ -1,6 +1,7 @@
 .form-login-title-input-description {
     color: #B3B3B3;
     font-size: 13px;
+    line-height: 0;
 }
 
 .form-login-password-input-data {

@@ -1,0 +1,31 @@
+.sing-up-terms {
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 10px;
+    font-size: 14px;
+}
+
+.sing-up-terms {
+    background-color: #ffffff1a;
+    height: 70px;
+    padding: 10px 17px;
+    border-radius: 5px;
+}
+
+.sing-up-terms-checbox {
+    background: #121212;
+}
+
+.sing-up-terms:first-of-type {
+    margin-bottom: 20px;
+}
+
+.sing-up-terms-condtions {
+    margin-top: 10px;
+    font-size: 14.3px;
+}
+
+.sing-up-terms-condtions-link {
+    color: #1db954;
+    text-decoration: underline;
+}
