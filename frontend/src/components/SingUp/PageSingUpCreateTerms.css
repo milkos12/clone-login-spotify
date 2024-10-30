@@ -1,23 +1,32 @@
 .sing-up-terms {
-    display: grid;
-    grid-template-columns: 20px auto;
+    display: flex;
+    align-items: flex-start;
     column-gap: 10px;
     font-size: 14px;
+    background-color: #ffffff1a;
+    height: auto;
+    padding: 18px ;    
+    border-radius: 5px;
+
 }
 
-.sing-up-terms {
-    background-color: #ffffff1a;
-    height: 70px;
-    padding: 10px 17px;
-    border-radius: 5px;
-}
 
 .sing-up-terms-checbox {
+    min-width: 15px;
+    height: 15px;
     background: #121212;
+    border-radius: 2.5px;
+    border: solid 1px #818181;
+}
+
+.sing-up-terms-checbox:hover {
+    border: solid 1px #1db954;
+    cursor: auto;
 }
 
 .sing-up-terms:first-of-type {
     margin-bottom: 20px;
+    
 }
 
 .sing-up-terms-condtions {
