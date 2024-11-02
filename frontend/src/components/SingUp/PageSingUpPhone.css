@@ -1,0 +1,19 @@
+.form-login-password-input-phone {
+    display: grid;
+    grid-template-columns: 80px 200px;
+}
+
+.form-login-password-inputs-phone-select {
+    width: 85px;
+}
+.form-login-password-inputs-phone {
+    width: 200px;
+}
+
+.form-login-password-inputs-data-select-conteiner-phone svg{
+    left: 52.5px;
+}
+
+.form-login-message-error-inputs-fill-desactive {
+    align-items: center;
+}

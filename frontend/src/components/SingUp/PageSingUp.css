@@ -6,6 +6,11 @@
     color: '#ffffff';
 }
 
+.form-login-input {
+    margin-top: 5px;
+    margin-bottom: 2.5px;
+}
+
 .form-singup-svg {
     text-align: center;
 }
@@ -55,6 +60,7 @@
 
 .form-conteiner-link {
     text-decoration: underline;
+    color: #ffffff;
 }
 
 .form-conteiner-botton {

@@ -6,6 +6,7 @@ import PageSingUp from './components/SingUp/PageSingUp';
 import PageSingUpCreate from './components/SingUp/PageSingUpCreate';
 import PageSingUpCreateData from './components/SingUp/PageSingUpCreateData';
 import PageSingUpCreateTerms from './components/SingUp/PageSingUpCreateTerms';
+import PageSingUpPhone from './components/SingUp/PageSingUpPhone';
 
 import React from 'react';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/PageSingUpCreate' element={<PageSingUpCreate />} />
         <Route path='/PageSingUpCreateData' element={<PageSingUpCreateData />} />
         <Route path='/PageSingUpCreateTerms' element={<PageSingUpCreateTerms />} />
+        <Route path='/PageSingUpPhone' element={<PageSingUpPhone />} />
       </Routes>
     </div>
   );

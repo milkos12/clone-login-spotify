@@ -1,3 +1,7 @@
+body, .form-reset-password {
+    background-color: #121212;
+}
+
 .form-reset-password {
     display: grid;
     grid-template-columns: 320px;

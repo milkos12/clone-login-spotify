@@ -1,8 +1,39 @@
 import './PageSingUp.css';
 import '../LoginForm/LoginForm.css';
 import OtherFormatLogin from '../OtherFormatLogin/OtherFormatLogin';
+import { Link } from 'react-router-dom';
+import LoginForm from '../LoginForm/LoginForm';
+import React, { useEffect, useRef, useState } from 'react';
+import { validationEmails } from '../../actions/ContentValidationInputs';
+
 
 export function PageSingUp() {
+    const REGEXT = /((.+)@([a-z|0-9]+\.[a-z]+))/;
+    const COLOR_BORDER_TRUE = '#727272';
+    const COLOR_BORDER_FALSE = '#ed2c3f';
+    const refIputMail = useRef<HTMLInputElement>(null);
+    const [isCorrecMail, setIsCorrectEmail] = useState(true);
+    const [colorBorder, setColorBorder] = useState(COLOR_BORDER_TRUE);
+
+    const validateEmailStructure = () => {
+        const valueInput = refIputMail.current?.value || '';
+        if(!REGEXT.test(valueInput)) {
+            setColorBorder(COLOR_BORDER_FALSE);
+            setIsCorrectEmail(false);
+        } else {
+            setColorBorder(COLOR_BORDER_TRUE);
+            setIsCorrectEmail(true);
+        }
+    }
+
+    const submtHandle = () => {
+        validateEmailStructure();
+        if (isCorrecMail) {
+            alert('correct mal');
+        }
+
+    }
+
     return (
         <div className='form-singup' style={{ color: '#ffffff', backgroundColor: '#121212' }}>
             <div>
@@ -14,23 +45,26 @@ export function PageSingUp() {
                 </div>
                 <div>
                     <span className='form-login-title-input'>Eamil address</span>
-                    <input className='form-login-input' type='text' placeholder='Email or username' id='username' />
+                    <input className='form-login-input' style={{ borderColor: colorBorder }} type='text' placeholder='name@domain.com' id='username' ref={refIputMail} onBlur={validateEmailStructure}/>
+                    {
+                        !isCorrecMail && (
+                            <div className='form-login-message-error-inputs-fill-desactive'>
 
-                    <div className='form-login-message-error-inputs-fill-desactive' >
+                                <>
+                                    <svg data-encore-id="icon" role="img" aria-label="Error:" aria-hidden="false" viewBox="0 0 24 24"><title>Error:</title><path d="M11 18v-2h2v2h-2zm0-4V6h2v8h-2z"></path><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"></path></svg>
+                                    <span>This email is invalid. Make sure it's written like example@email.com.</span>
+                                </>
 
-                        <>
-                            <svg data-encore-id="icon" role="img" aria-label="Error:" aria-hidden="false" viewBox="0 0 24 24"><title>Error:</title><path d="M11 18v-2h2v2h-2zm0-4V6h2v8h-2z"></path><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"></path></svg>
-                            <span>This email is invalid. Make sure it's written like example@email.com.</span>
-                        </>
-
-                    </div>
+                            </div>
+                        )
+                    }
 
                 </div>
                 <div>
                     <a className='form-conteiner-url'>Use phone number instead.</a>
                 </div>
                 <div className='form-conteiner-login-button-submit login-button-submit-forgot form-conteiner-button'>
-                    <input className='form-login-button-submit' type="submit" value='Next' />
+                    <input className='form-login-button-submit' type="submit" value='Next' onClick={submtHandle} />
                 </div>
                 <div className='form-conteiner-hr-conteiner'>
                     <div className='form-conteiner-hr'> </div>
@@ -42,8 +76,8 @@ export function PageSingUp() {
                     </div>
 
                     <div className='form-conteiner-botton'>
-                        <span className='form-conteiner-text'>Already have an account?</span>
-                        <span className='form-conteiner-link'> Log in here.</span>
+                        <span className='form-conteiner-text'>Already have an account? </span>
+                        <span className='form-conteiner-link'><Link to='/' style={{ color: '#ffffff' }}>Log in here.</Link></span>
                     </div>
                 </div>
             </div>
